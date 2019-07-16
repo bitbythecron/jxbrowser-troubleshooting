@@ -1,0 +1,10 @@
+logging:
+  config: 'logback.groovy'
+server:
+  port: 9200
+  error:
+    whitelabel:
+      enabled: true
+spring:
+  cache:
+    type: none
