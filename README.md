@@ -59,13 +59,13 @@ browser.navigation().loadUrl("http://localhost:9200/");
 
 2. Build and run the app. You will see JxBrowser load something that looks like this:
 
-![not found](1.png)
+![not found](https://raw.githubusercontent.com/bitbythecron/jxbrowser-troubleshooting/master/screenshots/1.png)
 
 This is the problem! I should be seeing the nginx homepage!
 
 3. Now click the `Reload` button and you will see:
 
-![login](2.png)
+![login](https://raw.githubusercontent.com/bitbythecron/jxbrowser-troubleshooting/master/screenshots/2.png)
 
 ### JxBrowser hangs on close
 If you start the app and try to close the JxBrowser window on a mac via `Command+Q`, the process will hang and the pid needs
