@@ -61,7 +61,7 @@ browser.navigation().loadUrl("http://localhost:9200/");
 
 ![not found](https://raw.githubusercontent.com/bitbythecron/jxbrowser-troubleshooting/master/screenshots/1.png)
 
-This is the problem! I should be seeing the nginx homepage!
+This is the problem! I should be seeing the Spring login page!
 
 3. Now click the `Reload` button and you will see:
 
