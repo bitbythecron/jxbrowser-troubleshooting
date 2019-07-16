@@ -20,7 +20,7 @@ java -Dspring.config=. -Djava.awt.headless=false -jar build/libs/jxbrowser-troub
 And the app will run and launch a Swing window pointed to the URL specified in the `StartupListener` class.
 
 ## Current Issues
-### Exception at startup
+### 1. Exception at startup
 Although the app (and JxBrowser) starts up _seemingly_ fine, in the logs an exception is actually thrown at startup:
 
 ```
@@ -40,7 +40,7 @@ Exception in thread "AWT-EventQueue-0" java.lang.IllegalArgumentException
 	<rest of stacktrace omitted for brevity>
 ```
 
-### Cannot load localhost URL
+### 2. Cannot load localhost URL
 When the URL specified in the `StartupListener` class is a non-`localhost` address, the URL is fetched and loaded without issue. You
 can see this in action by running the app (see directions above) with the URL set to, say, `https://www.nike.com/`. When you do this,
 when the app starts up, a JxBrowser window with the Nike homepage loads beautifully!
@@ -50,7 +50,7 @@ will get a JxBrowser window displaying 404 "Not Found" error message, along with
 `localhost` URL loads perfectly fine the second time around. But this is a non-starter for me: I need it to load the `localhost` URL
 the very first time!
 
-#### Exact steps to reproduce this one
+#### 3. Exact steps to reproduce this one
 1. Change the URL in `StartupListener` to point to this homepage like so:
 
 ```
